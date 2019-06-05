@@ -1,4 +1,6 @@
-import Vue from 'vue';
+require('../css/main.css');
+
+import Vue from 'vue';0
 
 var app = new Vue({
     delimiters: ['${', '}'],

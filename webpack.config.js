@@ -6,6 +6,8 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
     Encore.configureRuntimeEnvironment(process.env.NODE_ENV || 'dev');
 }
 
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
 Encore
     // directory where compiled assets will be stored
     .setOutputPath('public/build/')
@@ -86,6 +88,9 @@ Encore
     .enableSassLoader()
     .enableLessLoader()
 
+    .addPlugin(new CopyWebpackPlugin([
+        { from: './assets/static', to: 'static' }
+    ]))
 ;
 
 module.exports = Encore.getWebpackConfig();
