@@ -3,41 +3,13 @@
 {% block title %} Ignis Uml {% endblock %}
 
 {% block body %}
-{#    <div id="x">${ message }</div>#}
 
-{#    <button id="demo-menu-lower-left"#}
-{#            class="mdl-button mdl-js-button mdl-button--icon">#}
-{#        <i class="material-icons">more_vert</i>#}
-{#    </button>#}
-{#    <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"#}
-{#        for="demo-menu-lower-left">#}
-{#        <li class="mdl-menu__item">Some Action</li>#}
-{#        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>#}
-{#        <li disabled class="mdl-menu__item">Disabled Action</li>#}
-{#        <li class="mdl-menu__item">Yet Another Action</li>#}
-{#    </ul>#}
-
-
-    {#    <div class="mdl-layout mdl-js-layout">#}
-    {#        <div class="mdl-layout__drawer  mdl-layout--fixed-drawer">#}
-    {#            <span class="mdl-layout-title">Title</span>#}
-    {#            <nav class="mdl-navigation">#}
-    {#                <a class="mdl-navigation__link" href="">Link</a>#}
-    {#                <a class="mdl-navigation__link" href="">Link</a>#}
-    {#                <a class="mdl-navigation__link" href="">Link</a>#}
-    {#                <a class="mdl-navigation__link" href="">Link</a>#}
-    {#            </nav>#}
-    {#        </div>#}
-    {#    </div>#}
-    {#    <main class="mdl-layout__content mdl-color--white mdl-cell mdl-cell--8-col">#}
-    {#        <div class="page-content">assadsad</div>#}
-    {#    </main>#}
-    {#    <div class="mdl-card--expand mdl-color--blue mdl-cell mdl-cell--3-col">#}
-    {#        <div class="page-content">sdfdsf</div>#}
-    {#    </div>#}
-
-
-
+    <pre id="editor">function foo(items) {
+        var i;
+        for (i = 0; i &lt; items.length; i++) {
+            alert("Ace Rocks " + items[i]);
+        }
+    }</pre>
 
 
 
@@ -106,69 +78,75 @@
                 </table>
             </nav>
         </div>
-{#        <div class="mdl-tabs mdl-js-tabs">#}
-{#            <div class="mdl-tabs__tab-bar">#}
-{#                <a href="#tab1-panel" class="mdl-tabs__tab is-active">HTML5</a>#}
-{#                <a href="#tab2-panel" class="mdl-tabs__tab">HTML5</a>#}
-{#                <a href="#tab3-panel" class="mdl-tabs__tab">HTML5</a>#}
-{#            </div>#}
-{#            <div class="mdl-tabs__panel is-active" id="tab1-panel" style="padding-left:20px;padding-right:10px;margin-top:20px;">#}
-{#                <p>HTML5 is the next major revision of the HTML standard superseding HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for structuring and presenting content on the World Wide Web</p>#}
-{#            </div>#}
-{#            <div class="mdl-tabs__panel" id="tab2-panel" style="padding-left:20px;padding-right:10px;margin-top:20px;">#}
-{#                <p>HTML 5 Webinar: June 14, 2016 7 - 11 pm IST</p>#}
-{#            </div>#}
-{#            <div class="mdl-tabs__panel" id="tab3-panel" style="padding-left:20px;padding-right:10px;margin-top:20px;">#}
-{#                <p>#}
-{#                    The following examples showcases the use of mdl-layout class to style various containers#}
-{#                </p>#}
-{#            </div>#}
-{#        </div>#}
+        {#        <div class="mdl-tabs mdl-js-tabs">#}
+        {#            <div class="mdl-tabs__tab-bar">#}
+        {#                <a href="#tab1-panel" class="mdl-tabs__tab is-active">HTML5</a>#}
+        {#                <a href="#tab2-panel" class="mdl-tabs__tab">HTML5</a>#}
+        {#                <a href="#tab3-panel" class="mdl-tabs__tab">HTML5</a>#}
+        {#            </div>#}
+        {#            <div class="mdl-tabs__panel is-active" id="tab1-panel" style="padding-left:20px;padding-right:10px;margin-top:20px;">#}
+        {#                <p>HTML5 is the next major revision of the HTML standard superseding HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for structuring and presenting content on the World Wide Web</p>#}
+        {#            </div>#}
+        {#            <div class="mdl-tabs__panel" id="tab2-panel" style="padding-left:20px;padding-right:10px;margin-top:20px;">#}
+        {#                <p>HTML 5 Webinar: June 14, 2016 7 - 11 pm IST</p>#}
+        {#            </div>#}
+        {#            <div class="mdl-tabs__panel" id="tab3-panel" style="padding-left:20px;padding-right:10px;margin-top:20px;">#}
+        {#                <p>#}
+        {#                    The following examples showcases the use of mdl-layout class to style various containers#}
+        {#                </p>#}
+        {#            </div>#}
+        {#        </div>#}
 
 
         <div class="workspace content-grid mdl-grid ">
             <div class="workspace-structure-box mdl-ce2ll mdl-cell--2-col mdl-color--white workspace-box-shadow">
                 <span class="mdl-layout-title">Title</span>
-                    <ul class="mdl-list">
-                        <li class="mdl-list__item"><a class="" href="">Link</a></li>
-                        <li class="mdl-list__item"><a class="" href="">Link</a></li>
-                        <li class="mdl-list__item"><a class="" href="">Link</a></li>
-                        <li class="mdl-list__item"><a class="" href="">Link</a></li>
-                    </ul>
+                <ul class="mdl-list">
+                    <li class="mdl-list__item"><a class="" href="">Link</a></li>
+                    <li class="mdl-list__item"><a class="" href="">Link</a></li>
+                    <li class="mdl-list__item"><a class="" href="">Link</a></li>
+                    <li class="mdl-list__item"><a class="" href="">Link</a></li>
+                </ul>
             </div>
-            <div class="workspace-main-box mdl-cedll mdl-cell--6-col mdl-color--black workspace-box-shadow">
-                <!-- also here -->ff
+            <div class="workspace-main-box mdl-cedll mdl-cell--6-col mdl-color--bffflack workspace-box-shadow">
+                <div id="editor">
+                    style f
+                </div>
             </div>
             <div class="workspace-info-box mdl-cdell mdl-cell--4-col mdl-color--blue workspace-box-shadow">
                 <!-- and probably also here -->ggg
             </div>
         </div>
 
-{#        <main class="mdl-layout__content mdl-js-layout mdl-color--white">#}
-{#            <div class="mdl-layout mdl-js-layout">#}
-{#                <div class="mdl-layout">#}
-{#                    <span class="mdl-layout-title">Title</span>#}
-{#                    <nav class="mdl-navigation">#}
-{#                        <a class="mdl-navigation__link" href="">Link</a>#}
-{#                        <a class="mdl-navigation__link" href="">Link</a>#}
-{#                        <a class="mdl-navigation__link" href="">Link</a>#}
-{#                        <a class="mdl-navigation__link" href="">Link</a>#}
-{#                    </nav>#}
-{#                </div>#}
-{#            </div>#}
-{#            <div class=" mdl-color--white mdl-cell mdl-cell--8-col">#}
-{#                <div class="page-content">assadsad</div>#}
-{#            </div>#}
-{#            <div class="mdl-card--expand mdl-color--blue mdl-cell mdl-cell--3-col">#}
-{#                <div class="page-content">sdfdsf</div>#}
-{#            </div>#}
-{#        </main>#}
+        {#        <main class="mdl-layout__content mdl-js-layout mdl-color--white">#}
+        {#            <div class="mdl-layout mdl-js-layout">#}
+        {#                <div class="mdl-layout">#}
+        {#                    <span class="mdl-layout-title">Title</span>#}
+        {#                    <nav class="mdl-navigation">#}
+        {#                        <a class="mdl-navigation__link" href="">Link</a>#}
+        {#                        <a class="mdl-navigation__link" href="">Link</a>#}
+        {#                        <a class="mdl-navigation__link" href="">Link</a>#}
+        {#                        <a class="mdl-navigation__link" href="">Link</a>#}
+        {#                    </nav>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#            <div class=" mdl-color--white mdl-cell mdl-cell--8-col">#}
+        {#                <div class="page-content">assadsad</div>#}
+        {#            </div>#}
+        {#            <div class="mdl-card--expand mdl-color--blue mdl-cell mdl-cell--3-col">#}
+        {#                <div class="page-content">sdfdsf</div>#}
+        {#            </div>#}
+        {#        </main>#}
 
 
 
 
 
     </div>
+
+
+
+
 {% endblock %}
 
 {% block stylesheets %}

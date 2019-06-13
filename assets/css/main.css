@@ -1,5 +1,5 @@
 body {
-    background-image: url('../static/common/img/bg_main.png');
+    /*background-image: url('../static/common/img/bg_main.png');*/
 }
 
 .workspace {
@@ -34,4 +34,9 @@ body {
     -webkit-box-shadow: -4px 3px 23px 2px rgba(0,0,0,0.25);
     -moz-box-shadow: -4px 3px 23px 2px rgba(0,0,0,0.25);
     box-shadow: -4px 3px 23px 2px rgba(0,0,0,0.25);
+}
+
+#editor {
+    position: relative;
+
 }
