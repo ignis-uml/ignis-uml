@@ -5,7 +5,7 @@ body {
 .workspace {
     width: 100%;
     height: 100%;
-    margin-top: 6px;
+    /*margin-top: 6px;*/
 }
 
 .workspace-structure-box, .workspace-info-box, .workspace-main-box {
@@ -13,30 +13,29 @@ body {
 }
 
 .workspace-structure-box {
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-bottomleft: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    /*-webkit-border-top-left-radius: 5px;*/
+    /*-webkit-border-bottom-left-radius: 5px;*/
+    /*-moz-border-radius-topleft: 5px;*/
+    /*-moz-border-radius-bottomleft: 5px;*/
+    /*border-top-left-radius: 5px;*/
+    /*border-bottom-left-radius: 5px;*/
 }
 
 .workspace-info-box {
-    -webkit-border-top-right-radius: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-    -moz-border-radius-topright: 5px;
-    -moz-border-radius-bottomright: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /*-webkit-border-top-right-radius: 5px;*/
+    /*-webkit-border-bottom-right-radius: 5px;*/
+    /*-moz-border-radius-topright: 5px;*/
+    /*-moz-border-radius-bottomright: 5px;*/
+    /*border-top-right-radius: 5px;*/
+    /*border-bottom-right-radius: 5px;*/
 }
 
 .workspace-box-shadow {
-    -webkit-box-shadow: -4px 3px 23px 2px rgba(0,0,0,0.25);
-    -moz-box-shadow: -4px 3px 23px 2px rgba(0,0,0,0.25);
-    box-shadow: -4px 3px 23px 2px rgba(0,0,0,0.25);
+    border: 1px solid red;
 }
 
-#editor {
-    position: relative;
+.editor-parent { }
 
+#editor {
+    height: 100%;
 }

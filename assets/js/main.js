@@ -1,6 +1,7 @@
 require('../css/main.css');
 
 import Vue from 'vue';
+import oCanvas from 'ocanvas';
 
 import 'ace-builds/src-min-noconflict/ace' // Load Ace Editor
 
@@ -83,9 +84,13 @@ const editor = ace.edit('editor', {
 });
 
 // Set Editor Theme and Mode
-editor.setTheme('ace/theme/chrome');
+// editor.setTheme('ace/theme/chrome');
 editor.session.setMode('ace/mode/javascript');
 
+// editor.setTheme("ace/theme/monokai");
+// editor.getSession().setMode("ace/mode/javascript");
+
+editor.resize();
 /*
 var app = new Vue({
     delimiters: ['${', '}'],
@@ -116,3 +121,43 @@ editor.getOption("optionName");
 
 */
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
+
+
+var canvas = oCanvas.create({
+    canvas: "#canvas",
+    fps: 60
+});
+var button = canvas.display.rectangle({
+    x: canvas.width / 2,
+    y: canvas.width / 5,
+    origin: { x: "center", y: "top" },
+    width: 300,
+    height: 100,
+    fill: "linear-gradient(315deg, #079, #013)",
+    shadow: "0 0 20px rgba(0,0,0, 0.8)"
+});
+canvas.addChild(button);
+
+var increase = true;
+button.bind("click tap", function () {
+    if (increase) {
+        increase = false;
+
+        this.stop().animate({
+            x: canvas.width / 2,
+            y: canvas.height / 1.5,
+            height: 300,
+            rotation: 180
+        });
+    } else {
+        increase = true;
+
+        this.stop().animate({
+            x: canvas.width / 2,
+            y: canvas.width / 5,
+            height: 100,
+            rotation: 0
+        });
+    }
+});
+

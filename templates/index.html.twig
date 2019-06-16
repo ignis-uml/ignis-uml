@@ -4,13 +4,6 @@
 
 {% block body %}
 
-    <pre id="editor">function foo(items) {
-        var i;
-        for (i = 0; i &lt; items.length; i++) {
-            alert("Ace Rocks " + items[i]);
-        }
-    }</pre>
-
 
 
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -98,8 +91,8 @@
         {#        </div>#}
 
 
-        <div class="workspace content-grid mdl-grid ">
-            <div class="workspace-structure-box mdl-ce2ll mdl-cell--2-col mdl-color--white workspace-box-shadow">
+        <div class="workspace content-grid mdl-grid mdl-grid--no-spacing">
+            <div class="workspace-structure-box mdl-cell mdl-cell--2-col mdl-color--white workspace-box-shadow">
                 <span class="mdl-layout-title">Title</span>
                 <ul class="mdl-list">
                     <li class="mdl-list__item"><a class="" href="">Link</a></li>
@@ -108,13 +101,16 @@
                     <li class="mdl-list__item"><a class="" href="">Link</a></li>
                 </ul>
             </div>
-            <div class="workspace-main-box mdl-cedll mdl-cell--6-col mdl-color--bffflack workspace-box-shadow">
+            <div class="workspace-main-box mdl-cell mdl-cell--5-col mdl-color--bffflack workspace-box-shadow">
+                <div id="editor-parent">
                 <div id="editor">
                     style f
                 </div>
+                </div>
             </div>
-            <div class="workspace-info-box mdl-cdell mdl-cell--4-col mdl-color--blue workspace-box-shadow">
-                <!-- and probably also here -->ggg
+            <div class="workspace-info-box mdl-cell mdl-cell--5-col mdl-color--blue workspace-box-shadow">
+                <!-- and probably also here -->
+                <canvas id="canvas">e</canvas>
             </div>
         </div>
 
