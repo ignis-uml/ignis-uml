@@ -27,7 +27,7 @@
         "font-awesome": "^4.7.0",
         "graceful-fs": "^4.1.11",
         "izitoast": "^1.4.0",
-        "jquery": "2.2.4",
+        "jquery": "3.4.0",
         "jquery-easing": "^0.0.1",
         "material-design-lite": "^1.3.0",
         "ocanvas": "^2.10.0",
