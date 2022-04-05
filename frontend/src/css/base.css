@@ -1,0 +1,11 @@
+#ignis-editor {
+    width: 500px;
+    height: 500px;
+}
+
+#ignis-view {
+    width: 800px;
+    height: 500px;
+    background-color: #1818B2;
+    color: #fff;
+}
