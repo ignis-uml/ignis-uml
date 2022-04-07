@@ -6,6 +6,7 @@ Ignis.ui.test = function() {
             id: 1,
             type: 'default',
             label: 'label 1',
+            
         },
         {
             id: 2,
