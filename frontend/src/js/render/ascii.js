@@ -1,6 +1,5 @@
 let Ascii = {
     objects: [],
-
 }
 
 Ascii.init = function() {

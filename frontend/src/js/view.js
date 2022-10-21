@@ -5,6 +5,7 @@ let View = {
 
 View.init = function() {
     this.sfx = Ascii.init()
+    this.grid = AsciiGrid.init()
     this.viewport.ref = Ignis.refs.view;
     return this;
 }
@@ -29,27 +30,18 @@ View.packObjects = function(objects) {
     // packedObjects['rows'] = [];
     packedObjects= [];
 
-
+    let self = this;
     $.each(objects, function(index, object) {
-        textLength = object.label.length;
-        console.log(textLength);
-
-        position = {
-            left: 0,
-            right: 15,
-            top: 0,
-            bottom: 5,
-        }
         config = {
-            size: {
-                width: 100,
-                height: 50,
-            }
+            // size: {
+            //     width: 100,
+            //     height: 50,
+            // }
         }
 
         packedObjects[packedObjects.length++] = ({
             object: object,
-            position: position,
+            position: self.grid.configurePosition(object, index),
             config: config,
         });
     });
